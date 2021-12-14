@@ -7,7 +7,7 @@ export default function MovieList(props) {
   console.log("movies")
   return (
     <div className="movie-list">
-      {props.movies.map(movie => (
+      {props.movies.map((movie) => (
         <MovieDetails key={movie.id} movie={movie} />
       ))}
     </div>
@@ -19,7 +19,7 @@ function MovieDetails(props) {
   const { url } = useRouteMatch(); 
 
   return (
-    <Link to ={`${url}/${props.movie.id}`}>
+    <Link to ={`/movies/${props.movie.id}`}>
     <div className="movie-card">
       <h2>{title}</h2>
       <div className="movie-director">

@@ -13,7 +13,7 @@ export default function App () {
   useEffect(() => {
     const getMovies = () => {
       axios
-        .get('http://localhost:5000/api/movies') // Study this endpoint with Postman
+        .get("http://localhost:5000/api/movies") // Study this endpoint with Postman
         .then(response => {
           // Study this response with a breakpoint or log statements
           // and set the response data as the 'movieList' slice of state
@@ -34,7 +34,7 @@ export default function App () {
   return (
     <div>
       <SavedList list={[ /* This is stretch */]} />
-      
+
       <nav>
       <Link to='/'>Home</Link>
       <Link to='/movie'>Movie</Link>
